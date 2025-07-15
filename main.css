@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Port+Lligat+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-mich: "Michroma", sans-serif;
+  --color-myclr: #5e5368;
+  --font-inter: "Port Lligat Sans", sans-serif;
+  --font-home: "Inter", sans-serif;
+}
+
+.glow-white:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+
+  background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2); /* or any color you like */
+  border-radius: 5px;
+}
+.glow-border {
+  border: 2px solid #5e5368;
+  box-shadow: 0 0 10px #5e5368, 0 0 20px #5e5368;
+  transition: all 0.3s ease;
+}
+
+.glow-border:hover {
+  box-shadow: 0 0 15px #5e5368, 0 0 30px #5e5368;
+
+  transform: scale(1.05);
+}
+.glow-border2 {
+  border: 1px solid #5e5368;
+  box-shadow: 0 0 10px #5e5368, 0 0 20px #5e5368;
+}

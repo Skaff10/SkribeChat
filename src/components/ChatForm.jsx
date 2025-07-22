@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { IoMdSend } from "react-icons/io";
 
-const ChatForm = ({ setChatHistory }) => {
+const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
   const [input, setInput] = useState("");
   const inputRef = useRef();
   const handleSubmit = (e) => {
@@ -16,12 +16,16 @@ const ChatForm = ({ setChatHistory }) => {
       { role: "user", text: userMessage },
     ]);
 
-    setTimeout(() =>
+    setTimeout(() => {
       setChatHistory((history) => [
         ...history,
         { role: "model", text: "Thinking...." },
-      ]) ,600
-    );
+      ]);
+      generateBotResponse([
+        ...chatHistory,
+        { role: "user", text: userMessage },
+      ]);
+    }, 600);
   };
   return (
     <form className="h-18" onSubmit={handleSubmit}>

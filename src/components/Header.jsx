@@ -3,7 +3,7 @@ import { PiHamburgerLight } from "react-icons/pi";
 const Header = ({ setContent }) => {
   return (
     <div
-      className="flex justify-between border-b-1 font-home"
+      className="flex  w-full justify-between border-b-1 font-home"
       style={{
         backgroundImage: "linear-gradient(315deg, #000000 0%, #5e5368 74%)",
       }}
@@ -28,12 +28,7 @@ const Header = ({ setContent }) => {
         >
           Chat
         </span>
-        <span
-          className="cursor-pointer glow-white"
-          onClick={() => setContent("Setting")}
-        >
-          Setting
-        </span>
+        
       </div>
       <div className="flex md:hidden items-center mr-2 text-xl">
         <PiHamburgerLight className="text-amber-50 cursor-pointer " />

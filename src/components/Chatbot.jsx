@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState,useRef } from "react";
 import { DiOpenshift } from "react-icons/di";
 import { FaArrowDown } from "react-icons/fa";
 import { FaAngleDoubleUp } from "react-icons/fa";
@@ -6,6 +6,14 @@ import ChatForm from "./ChatForm";
 import ChatMessage from "./ChatMessage";
 const Chatbot = ({ setChatHistory, chatHistory, generateBotResponse }) => {
   const [bg, setBg] = useState(true);
+  const chatBodyRef = useRef();
+
+  useEffect(() => {
+    chatBodyRef.current.scrollTo({
+      top: chatBodyRef.current.scrollHeight,
+      behavior: "smooth",
+    });
+  }, [chatHistory]);
   return (
     <div
       className="w-full h-[calc(100vh-53px)] flex items-center justify-center scroll-smooth font-onemono font-semibold text-sm"
@@ -31,9 +39,12 @@ const Chatbot = ({ setChatHistory, chatHistory, generateBotResponse }) => {
           </button>
         </header>
 
-        <div className="flex-1 overflow-y-auto px-4 py-2 space-y-3">
+        <div
+          ref={chatBodyRef}
+          className="flex-1 overflow-y-auto px-4 py-2 space-y-3"
+        >
           <div className="flex justify-start model">
-            <div className="max-w-[75%] backdrop-blur-md bg-white/10  border-white/20 text-white px-4 py-2 rounded-t-full rounded-br-full rounded-bl-xl shadow">
+            <div className="max-w-[75%] backdrop-blur-md bg-white/10  border-white/20 text-white px-4 py-2  shadow">
               <p>
                 Hey there
                 <br />
@@ -50,7 +61,7 @@ const Chatbot = ({ setChatHistory, chatHistory, generateBotResponse }) => {
         <ChatForm
           setChatHistory={setChatHistory}
           generateBotResponse={generateBotResponse}
-          chatHistory={chatHistory} 
+          chatHistory={chatHistory}
         />
       </div>
       <div

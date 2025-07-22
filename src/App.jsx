@@ -2,11 +2,11 @@ import Header from "./components/Header.jsx";
 import Chatbot from "./components/Chatbot.jsx";
 import Home from "./components/Home.jsx";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 const App = () => {
   const [main, setMain] = useState("Home");
   const [chatHistory, setChatHistory] = useState([]);
-
+  
   const generateBotResponse = async (history) => {
 
     const updateHistory = (text) => {

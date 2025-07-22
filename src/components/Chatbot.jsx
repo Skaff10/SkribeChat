@@ -8,7 +8,7 @@ const Chatbot = ({setChatHistory, chatHistory}) => {
   const [bg, setBg] = useState(true);
   return (
     <div
-      className="w-full h-[calc(100vh-53px)] flex items-center justify-center scroll-smooth font-inter"
+      className="w-full h-[calc(100vh-53px)] flex items-center justify-center scroll-smooth font-onemono font-semibold text-sm"
       style={{
         backgroundImage: "linear-gradient(315deg, #000000 0%, #5e5368 74%)",
       }}
@@ -36,7 +36,7 @@ const Chatbot = ({setChatHistory, chatHistory}) => {
         <div className="flex-1 overflow-y-auto px-4 py-2 space-y-3">
          
           <div className="flex justify-start model">
-            <div className="max-w-[75%] backdrop-blur-md bg-white/10 border border-white/20 text-white px-4 py-2 rounded-t-full rounded-br-full rounded-bl-xl shadow">
+            <div className="max-w-[75%] backdrop-blur-md bg-white/10  border-white/20 text-white px-4 py-2 rounded-t-full rounded-br-full rounded-bl-xl shadow">
               <p>
                 Hey there
                 <br />
@@ -62,7 +62,7 @@ const Chatbot = ({setChatHistory, chatHistory}) => {
       >
         <FaAngleDoubleUp
           onClick={() => setBg(true)}
-          className="cursor-pointer  size-8 p-1 "
+          className="cursor-pointer  size-8 p-1"
         />
       </div>
     </div>

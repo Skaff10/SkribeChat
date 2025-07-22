@@ -28,12 +28,7 @@ const Header = ({ setContent }) => {
         >
           Chat
         </span>
-        <span
-          className="cursor-pointer glow-white"
-          onClick={() => setContent("Setting")}
-        >
-          Setting
-        </span>
+        
       </div>
       <div className="flex md:hidden items-center mr-2 text-xl">
         <PiHamburgerLight className="text-amber-50 cursor-pointer " />

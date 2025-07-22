@@ -2,7 +2,6 @@ import { useState } from "react";
 import { DiOpenshift } from "react-icons/di";
 import { FaArrowDown } from "react-icons/fa";
 import { FaAngleDoubleUp } from "react-icons/fa";
-import { IoMdSend } from "react-icons/io";
 import ChatForm from "./ChatForm";
 import ChatMessage from "./ChatMessage";
 const Chatbot = ({setChatHistory, chatHistory}) => {
@@ -19,7 +18,7 @@ const Chatbot = ({setChatHistory, chatHistory}) => {
           bg ? "flex" : "hidden"
         }  bg-myclr md:h-3/4 md:w-2xl h-full w-full  flex-col border border-white/20 rounded-md overflow-hidden`}
       >
-        {/* Header */}
+        
         <header className="flex justify-between items-center px-4 py-2 bg-myclr border-b border-white/20 mb-2">
           <div className="flex gap-2 items-center">
             <DiOpenshift className="size-10 text-amber-100 p-1" />
@@ -35,7 +34,7 @@ const Chatbot = ({setChatHistory, chatHistory}) => {
 
        
         <div className="flex-1 overflow-y-auto px-4 py-2 space-y-3">
-          {/* Bot message */}
+         
           <div className="flex justify-start model">
             <div className="max-w-[75%] backdrop-blur-md bg-white/10 border border-white/20 text-white px-4 py-2 rounded-t-full rounded-br-full rounded-bl-xl shadow">
               <p>
@@ -53,7 +52,7 @@ const Chatbot = ({setChatHistory, chatHistory}) => {
           
         </div>
 
-        {/* Footer */}
+        
         <ChatForm setChatHistory={setChatHistory }/>
       </div>
       <div

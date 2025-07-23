@@ -1,9 +1,9 @@
-# Skribe Chatbot
+# 🤖 Skribe Chatbot
 
 Skribe is an AI-powered chatbot built with React and Vite. It transforms conversations into knowledge, providing instant answers, smart learning, and 24/7 availability.  
 This project demonstrates a modern, responsive chat UI with Tailwind CSS and React Icons.
 
-## Features
+## 🚀 Features
 
 - **Instant Answers:** Get quick, accurate replies on any topic.
 - **Smart Learning:** Converse your way to understanding and insight.
@@ -31,9 +31,11 @@ Install dependencies:
 
 ## Configuration
 
+```sh
 Create a .env file in the root directory and set your API endpoint:
 
 VITE_API_URL=https://your-ai-api-endpoint.com?key={your-api-key}
+```
 
 ## Running Locally
 
@@ -41,7 +43,9 @@ Start the development server:
 
 **npm run dev**
 
+```sh
 Open http://localhost:5173 in your browser.
+```
 
 ### Project Structure
 
@@ -76,8 +80,10 @@ Open http://localhost:5173 in your browser.
 
 Contributions are welcome! Please open issues or pull requests for improvements or bug fixes.
 
-Made with 💡 by Albab Farabi
+```sh
+Created by Albab Farabi . Feel free to use and modify it for your own learning and projects!
+```sh
 
-You can edit the author, demo image, and other details in the `package.json` file.
+
 
 

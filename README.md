@@ -82,7 +82,7 @@ Contributions are welcome! Please open issues or pull requests for improvements 
 
 ```sh
 Created by Albab Farabi . Feel free to use and modify it for your own learning and projects!
-```sh
+```
 
 
 

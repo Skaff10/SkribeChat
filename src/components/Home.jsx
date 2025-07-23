@@ -21,7 +21,7 @@ const Home = ({ setContent }) => {
 
         <button
           onClick={() => setContent("Chatbot")}
-          className="cursor-pointer hover:bg-violet-100 hover:text-myclr mt-6 px-6 py-2 bg-myclr text-white font-semibold rounded transition"
+          className="cursor-pointer hover:bg-violet-100 border lg:border-0  hover:text-myclr mt-6 px-6 py-2 bg-myclr text-white font-semibold rounded transition"
         >
           Start Chatting
         </button>
